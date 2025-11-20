@@ -1,5 +1,5 @@
 import streamlit as st
-from sklearn.externals import joblib
+import joblib
 import numpy as np
 import pandas as pd
 
@@ -32,5 +32,6 @@ if st.button("Predict Score"):
     prediction = model.predict(input_data)[0]
     st.success(f"Predicted Total Score: **{prediction:.2f}**")
     
+
 
 
